@@ -27,8 +27,8 @@ def login():
 
         if cursor.fetchone() is not None:
                 messagebox.showinfo("Success" , "Successfully Login" , parent = win)
-                close()
                 main_window()
+		close()
                 
         else:
                 
